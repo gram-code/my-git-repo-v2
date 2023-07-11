@@ -129,7 +129,7 @@ git add index.html README.md
 git commit -m "Task No. 5 - main commit"
 git push origin main
 ```
-Пробуем слить ветки с помощью `git merge feature-brach`:
+Пробуем слить ветки с помощью `git merge feature-branch`:
 ```bash
 Auto-merging index.html
 CONFLICT (add/add): Merge conflict in index.html
@@ -144,6 +144,6 @@ Automatic merge failed; fix conflicts and then commit the result.
 И зафиксируем:
 ```
 git add index.html
-git commit -m "MERGE!!!!"
+git commit
 git push
 ```
