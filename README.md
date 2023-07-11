@@ -81,7 +81,7 @@ echo "log.txt" > .gitignore
 
 Фиксируем изменения
 ```bash
-git add README.md .gitignore README.md
+git add README.md .gitignore notes.txt
 git commit -m "Task No. 4"
 git push
 ```
@@ -91,11 +91,7 @@ git push
 On branch main
 Your branch is up to date with 'origin/main'.
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        notes.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
+nothing to commit, working tree clean
 ```
 
 ## 5. Слияние веток и разрешение конфликтов
@@ -113,7 +109,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ### Решение 
 Создадим и переключимся на новую ветку:
 ```bash
-git checkout -b feature-brach
+git checkout -b feature-branch
 ```
 Создадим файл и запишем текст:
 ```bash
@@ -123,7 +119,7 @@ echo "новая строка" > index.html
 ```bash
 git add index.html
 git commit -m "Task No. 5 - feature-brach commit"
-git push origin feature-brach
+git push origin feature-branch
 ```
 Переключимся на основную ветку, создадим там файл и зафиксируем изменения:
 ```bash
